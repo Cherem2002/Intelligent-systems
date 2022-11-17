@@ -1,0 +1,23 @@
+dog(flash).//Обозначаем имена собак
+dog(rover).
+cat(bootsy).//Обозначаем имена кошек
+horse(star).//Обозначаем имена лошадей
+color(black).//Обозначаем цвета
+color(brown).
+color(redhead).
+color(white).
+star(white).//Обозначаем цвета животных
+bootsy(brown).
+rover(redhead).
+flash(black).
+black(flash).
+brown(bootsy).
+redhead(rover).
+white(star).
+pet(dog).//Обозначаем домашних животных
+pet(cat).
+animal(horse).//Обозначаем диких животных
+owner(kate).//Обозначаем владельцов
+owner(tom).
+tom(X) :- dog(X).//Том владелец собаки
+kate(X,Y) :- horse(X),black(Y).dog(X).//Том владелеца белой лошади
